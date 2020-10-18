@@ -14,6 +14,9 @@ function Services() {
       <div class="flex-auto bg-white rounded-tl-3xl p-5 ml-2">
         <p class="text-3xl text-red-400">SERVICES</p>
         <p class="text-xl">These are the <span class="text-red-400">cool</span> stuff I can do for you.</p>
+
+        <div>
+        </div>
       </div>
     </div>
   );
