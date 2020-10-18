@@ -239,6 +239,7 @@ module.exports = {
       default: "1"
     },
     fontFamily: {
+      body:[ "Josefin Sans" ],
       sans: [
         "system-ui",
         "-apple-system",
