@@ -5,10 +5,12 @@ import Navbar from './navbar';
 
 function Services() {
   return (
-    <div className="flex flex-col font-body h-screen bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400">
+    <div className="flex flex-col font-body h-full bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400">
+      {/* Name and home button */}
       <div>
         <p className="font-semibold text-xl p-4 text-gray-200">&lt; steve marvins /&gt;</p>
       </div>
+      {/* Navbar */}
       <div className="flex-initial">
         <Navbar/>
       </div>
@@ -17,9 +19,32 @@ function Services() {
         <p className="text-xl">These are the <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">cool</span> stuff I can do for you.</p>
         {/* Card section */}
         <div className="overflow-y-auto h-full mt-4">
+          {/* Responsive card */}
           <div className="md:flex border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md p-5 mb-2">
-            <svg className="md:flex-initial sm:inline-block sm:w-20 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <svg className="md:flex-initial sm:inline-block sm:w-16 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+            </svg>
+            <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
+              <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Design</p>
+              <p className=" text-xl md:text-white">By default, I built this site using a mobile first breakpoint system.</p>
+            </div>
+          </div>
+
+          {/* Web Development card */}
+          <div className="md:flex border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md p-5 mb-2">
+            <svg className="md:flex-initial sm:inline-block sm:w-16 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+            </svg>
+            <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
+              <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Web Development</p>
+              <p className=" text-xl md:text-white">From creating front-end, back-end and even hybrid applications </p>
+            </div>
+          </div>
+
+          {/* Debugging card */}
+          <div className="md:flex border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md p-5 mb-2">
+            <svg className="md:flex-initial sm:inline-block sm:w-16 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
               <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Design</p>
@@ -27,19 +52,11 @@ function Services() {
             </div>
           </div>
 
+          {/* Deployment card */}
           <div className="md:flex border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md p-5 mb-2">
-            <svg className="md:flex-initial sm:inline-block sm:w-20 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
-            </svg>
-            <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
-              <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Web Development</p>
-              <p className=" text-xl md:text-white">By default, this site uses a mobile first breakpoint system.</p>
-            </div>
-          </div>
-
-          <div className="md:flex border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md p-5 mb-2">
-            <svg className="md:flex-initial sm:inline-block sm:w-20 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+            <svg className="md:flex-initial sm:inline-block sm:w-16 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z" />
+              <path d="M9 13h2v5a1 1 0 11-2 0v-5z" />
             </svg>
             <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
               <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Design</p>
