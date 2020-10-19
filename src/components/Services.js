@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/main.css';
 import '../App.css';
-import navbar from './navbar';
+import Navbar from './navbar';
 
 function Services() {
   return (
@@ -10,7 +10,7 @@ function Services() {
         <p class="font-semibold text-xl p-4 text-gray-300">&lt; steve marvins /&gt;</p>
       </div>
       <div class="flex-initial">
-
+        <Navbar/>
       </div>
       <div class="flex-auto bg-white rounded-tl-3xl p-5 ml-2">
         <p class="text-3xl text-red-400">SERVICES</p>
