@@ -26,7 +26,7 @@ function Services() {
             </svg>
             <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
               <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Design</p>
-              <p className=" text-xl md:text-white">By default, I built this site using a mobile first breakpoint system.</p>
+              <p className=" text-xl md:text-white">Go on and resize the window, I built this site using a mobile first breakpoint system.</p>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ function Services() {
             </svg>
             <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
               <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Web Development</p>
-              <p className=" text-xl md:text-white">From creating front-end, back-end and even hybrid applications </p>
+              <p className=" text-xl md:text-white">As a Full-Stack developer, I bridge the gap between the front and back end to create a robust versatile application. </p>
             </div>
           </div>
 
@@ -47,8 +47,8 @@ function Services() {
               <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
-              <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Design</p>
-              <p className=" text-xl md:text-white">By default, this site uses a mobile first breakpoint system.</p>
+              <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Debugging</p>
+              <p className=" text-xl md:text-white">Sleepless nights were spent debugging errors and rectifying code to show my dedication to bring the best version out of a task at hand.</p>
             </div>
           </div>
 
@@ -59,8 +59,8 @@ function Services() {
               <path d="M9 13h2v5a1 1 0 11-2 0v-5z" />
             </svg>
             <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
-              <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Design</p>
-              <p className=" text-xl md:text-white">By default, this site uses a mobile first breakpoint system.</p>
+              <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Deployment</p>
+              <p className=" text-xl md:text-white">After multiple successful deployments to different hosting sites, I've got a knack for delivering singular and hybrid applications for users to use.</p>
             </div>
           </div>
 
