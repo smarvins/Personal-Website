@@ -19,6 +19,7 @@ function Services() {
         <p className="text-xl">These are the <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">cool</span> stuff I can do for you.</p>
         {/* Card section */}
         <div className="overflow-y-auto h-full mt-4">
+
           {/* Responsive card */}
           <div className="md:flex border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md p-5 mb-2">
             <svg className="md:flex-initial sm:inline-block sm:w-16 w-12 m-2 bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 rounded-md mr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
