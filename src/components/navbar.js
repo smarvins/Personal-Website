@@ -4,7 +4,7 @@ import '../App.css';
 
 function Navbar() {
   return (
-    <div className="flex justify-center ml-5 mb-5">
+    <div className="flex justify-evenly mx-10 mb-5">
       <div className="flex">
         <div className="m-auto pt-2">
           <svg className="w-12 m-auto bg-gray-100 rounded-full p-3 stroke-current text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
