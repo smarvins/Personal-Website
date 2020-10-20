@@ -17,10 +17,10 @@ function Skills() {
         <div className="overflow-y-auto h-full mt-4 grid grid-cols-1 lg:grid-cols-3 gap-1">
 
           {/* Web Frameworks card */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md ">
-            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md">
+          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Web Frameworks</p>
-              <ul class="list-disc text-xl md:text-white">
+              <ul className="list-disc text-xl md:text-white">
                 <li>React</li>
                 <li>Django</li>
               </ul>
@@ -28,10 +28,10 @@ function Skills() {
           </div>
 
           {/* UI Frameworks card */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md">
-            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md">
+          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">UI Frameworks</p>
-              <ul class="list-disc text-xl md:text-white">
+              <ul className="list-disc text-xl md:text-white">
                 <li>Bootstrap</li>
                 <li>Tailwindcss (this site uses it!)</li>
                 <li>Material UI / Framer motion</li>
@@ -40,10 +40,10 @@ function Skills() {
           </div>
 
           {/* Markup card */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md">
-            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md">
+          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Markup and Styles</p>
-              <ul class="list-disc text-xl md:text-white">
+              <ul className="list-disc text-xl md:text-white">
                 <li>HTML/JSX</li>
                 <li>CSS / SCSS</li>
                 <li>JSS</li>
@@ -52,10 +52,10 @@ function Skills() {
           </div>
 
           {/* Language card */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md">
-            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md">
+          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Languages</p>
-              <ul class="list-disc text-xl md:text-white">
+              <ul className="list-disc text-xl md:text-white">
                 <li>Python</li>
                 <li>JavaScript</li>
               </ul>
@@ -63,10 +63,10 @@ function Skills() {
           </div>
 
           {/* Hosting card */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md">
-            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md">
+          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Hosting</p>
-              <ul class="list-disc text-xl md:text-white">
+              <ul className="list-disc text-xl md:text-white">
                 <li>Github</li>
                 <li>Netlify</li>
                 <li>Heroku</li>
@@ -75,10 +75,10 @@ function Skills() {
           </div>
 
           {/* YouTube card */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md rounded-md">
-            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md">
+          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+            <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">YouTube</p>
-              <ul class="list-disc text-xl md:text-white">
+              <ul className="list-disc text-xl md:text-white">
                 <li>Channel Management</li>
                 <li>Video Editing</li>
                 <li>SEO / Thumbnail Creation</li>
