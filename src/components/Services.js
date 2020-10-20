@@ -27,7 +27,7 @@ function Services() {
             </svg>
             <div class="md:flex-auto sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 md:p-10 rounded-md">
               <p class="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Design</p>
-              <p className=" text-xl md:text-white">Go on and resize the window, I built this site using a mobile first breakpoint system.</p>
+              <p className=" text-xl md:text-white">Go on and resize the window, I built this site using a mobile first breakpoint system for you to see what I can do.</p>
             </div>
           </div>
 
