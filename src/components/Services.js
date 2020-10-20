@@ -6,10 +6,6 @@ import Navbar from './navbar';
 function Services() {
   return (
     <div className="flex flex-col font-body h-full bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400">
-      {/* Name and home button */}
-      <div>
-        <p className="font-semibold text-xl p-4 text-gray-200">&lt; steve marvins /&gt;</p>
-      </div>
       {/* Navbar */}
       <div className="flex-initial">
         <Navbar/>
