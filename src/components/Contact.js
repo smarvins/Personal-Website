@@ -1,9 +1,23 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import '../styles/main.css';
 import '../App.css';
 import Navbar from './navbar';
 
 function Contact() {
+  //Email function for contact form
+  const alert = useAlert()
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('contact_service', 'contact_form', e.target, 'user_kfof21m5Ry8f1KhhBfY5J')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     <div className="flex flex-col font-body h-full bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400">
       {/* Navbar */}
@@ -19,20 +33,24 @@ function Contact() {
           {/* Kazi */}
           <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
-              <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Kazi</p>
-              <p className=" text-xl md:text-white">A Django+React hybrid site that can set up a task list for your activities.</p>
-              <p className=" text-xl md:text-white mt-4">Tools used:</p>
-              <ul className="list-disc text-xl md:text-white">
-                <li>React </li>
-                <li>Django (DRF)</li>
-                <li>JSX</li>
-                <li>SASS</li>
-              </ul>
-              {/* Links */}
-              <div className=" text-xl md:text-white mt-6 text-red-400 sm:text-green-400 md:text-white lg:text-white xl:text-white">
-                <a href="https://kazi-list.netlify.app/" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white">Visit the site</a>
-                <a href="https://github.com/Shavolski/Kazi" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white ml-6">See the code</a>
-              </div>
+              <form className="contact-form" onSubmit={sendEmail}>
+
+                <div className="name-form">
+                  <label className="label_name">What's your name?</label>
+                  <input className="input_name" type="text" name="user_name" />
+                </div>
+
+                <div className="email-form">
+                  <label className="label_email">Email</label>
+                  <input className="input_email" type="email" name="user_email" />
+                </div>
+
+                <div className="message-form">
+                  <div><label className="label_message">Message</label></div>
+                  <div><textarea className="textarea_message" name="message" /></div>
+                  <div><input className="text_button" type="submit" value="⇨" onClick={() => {alert.show('Thanks! I have recieved your message and will get back to you in a bit.', {type: 'success'} )}}/></div>
+                </div>
+              </form>
             </div>
           </div>
 
