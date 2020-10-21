@@ -40,7 +40,7 @@ function Experience() {
           <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Web Design Guidlines</p>
-              <p className=" text-xl md:text-white">This is a minimalistic site to showcase the guidelines that I follow when designing a project.</p>
+              <p className=" text-xl md:text-white">This is a minimalistic site that showcases the guidelines I follow when designing a project.</p>
               <p className=" text-xl md:text-white mt-4">Tools used:</p>
               <ul className="list-disc text-xl md:text-white">
                 <li>Gatsby</li>
