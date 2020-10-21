@@ -16,7 +16,7 @@ function App() {
             <Route path="/skills" component={Skills} />
             <Route path="/services" component={Services} />
             <Route path="/contact" component={Contact} />
-            <Route path="/work" component={Work} />
+            <Route path="/experience" component={Work} />
         </Switch>
     </main>
   );
