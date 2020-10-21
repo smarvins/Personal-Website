@@ -11,7 +11,7 @@ function Experience() {
         <Navbar/>
       </div>
       <div className="flex-auto bg-white rounded-tl-3xl p-5 ml-2 overflow-hidden">
-        <p className="text-3xl text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">WORK</p>
+        <p className="text-3xl text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">Experience</p>
         <p className="text-xl">The <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">projects</span> and <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">articles </span> under my name.</p>
         {/* Card section */}
         <div className="overflow-y-auto h-full mt-4 grid grid-cols-1 lg:grid-cols-2 gap-1">
