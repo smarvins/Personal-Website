@@ -1,4 +1,5 @@
 import React from 'react';
+import { useAlert } from 'react-alert'
 import emailjs from 'emailjs-com';
 import '../styles/main.css';
 import '../App.css';
