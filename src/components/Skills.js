@@ -32,7 +32,7 @@ function Skills() {
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">UI Frameworks</p>
               <ul className="list-disc text-xl md:text-white">
-                <li>Bootstrap</li>
+                <li>Bootstrap / Bulma</li>
                 <li>Tailwindcss (this site uses it!)</li>
                 <li>Material UI / Framer motion</li>
               </ul>
