@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/main.css';
 import '../App.css';
 import Navbar from './navbar';
+import { motion } from "framer-motion"
 
 function Skills() {
   return (
