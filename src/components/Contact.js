@@ -1,6 +1,5 @@
 import React from 'react';
 import { useAlert } from 'react-alert';
-import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import '../styles/main.css';
 import '../App.css';
@@ -21,7 +20,7 @@ function Contact() {
   }
 
   return (
-    <div className="flex flex-col font-body h-screen bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400">
+    <div className="flex flex-col font-body h-full bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400">
       {/* Navbar */}
       <div className="flex-initial">
         <Navbar/>
@@ -30,11 +29,11 @@ function Contact() {
         <p className="text-3xl text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">Contact</p>
         <p className="text-xl">Why end the conversation here? Let's have a <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">chat</span>.</p>
         {/* Card section */}
-        <div className="overflow-y-auto h-screen mt-4 ">
+        <div className="overflow-y-auto h-full lg:h-screen xl:h-full mt-4 ">
 
-          {/* Kazi */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
-            <div className="md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md md:w-full lg:h-full">
+          {/* Contact Form */}
+          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md ">
+            <div className="md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 sm:p-10 rounded-md md:w-full ">
               <form className="w-full max-w-sm m-auto" onSubmit={sendEmail}>
 
                 <div className="flex items-center border-b border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white py-2 mb-4">
@@ -73,6 +72,8 @@ function Contact() {
             </div>
           </div>
 
+            {/* Trademark */}
+          <p className="flex justify-center text-red-200 sm:text-green-200 md:text-blue-200 lg:text-pink-200 xl:text-teal-200 my-8">@2020 Steve Marvins</p>
 
         </div>
         <div>
