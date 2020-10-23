@@ -2,22 +2,45 @@ import React from 'react';
 import '../styles/main.css';
 import '../App.css';
 import Navbar from './navbar';
+import { motion } from "framer-motion";
 
 function Experience() {
+  {/* Up Animation */}
+  const container = {
+    hidden: { opacity: 1 },
+    show: {
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        ease: "easeInOut",
+        staggerChildren: 0.3
+      }
+    }
+  }
+
+  const item = {
+    hidden: { y:300, opacity: 0 },
+    show: { y:0, opacity: 1 }
+  }
   return (
     <div className="flex flex-col font-body h-full bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400">
       {/* Navbar */}
       <div className="flex-initial">
         <Navbar/>
       </div>
-      <div className="flex-auto bg-white rounded-tl-3xl p-5 ml-2 overflow-hidden">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex-auto bg-white rounded-tl-3xl p-5 ml-2 overflow-hidden">
         <p className="text-3xl text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">Experience</p>
         <p className="text-xl">The <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">projects</span> and <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">articles </span> under my name.</p>
         {/* Card section */}
         <div className="overflow-y-auto h-full mt-4 grid grid-cols-1 lg:grid-cols-2 gap-1">
 
           {/* Kazi */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+          <motion.div variants={item} className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Kazi</p>
               <p className=" text-xl md:text-white">A Django+React hybrid site that can set up a task list for your activities.</p>
@@ -34,10 +57,10 @@ function Experience() {
                 <a href="https://github.com/Shavolski/Kazi" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white ml-6">See the code</a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Web design guidlines */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+          <motion.div variants={item} className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Web Design Guidlines</p>
               <p className=" text-xl md:text-white">This is a minimalistic site that showcases the guidelines I follow when designing a project.</p>
@@ -54,10 +77,10 @@ function Experience() {
                 <a href="https://github.com/Shavolski/Web-Design-Guidelines" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white ml-6">See the code</a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Forex bot */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+          <motion.div variants={item} className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Forex Bot</p>
               <p className=" text-xl md:text-white">A bot that uses simple moving averages to trade currencies in the FX market.</p>
@@ -71,10 +94,10 @@ function Experience() {
                 <a href="https://github.com/Shavolski/Forex-Bot" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white">See the code</a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Framer motion */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+          <motion.div variants={item} className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-48 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Framer Motion Portfolio</p>
               <p className=" text-xl md:text-white">This is another portfolio but it is built using Framer Motion...an animation library for React.</p>
@@ -91,10 +114,10 @@ function Experience() {
                 <a href="https://github.com/Shavolski/Framer-Motion-Portfolio" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white ml-6">See the code</a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Article 1 */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+          <motion.div variants={item} className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-64 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Object-Oriented Programming…simplified.</p>
               <p className=" text-xl md:text-white">An article explaining O.O.P as a paradigm and how it functions in the tasks applicable to it.</p>
@@ -103,10 +126,10 @@ function Experience() {
                 <a href="https://medium.com/@stevemarvins.dev/object-oriented-programming-simplified-ddf0e3a628ef" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white">Read more..</a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Article 2 */}
-          <div className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
+          <motion.div variants={item} className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
             <div className="sm:inline-block md:bg-blue-400 lg:bg-pink-400 xl:bg-teal-400 p-5 pl-10 sm:p-10 rounded-md md:w-full lg:h-full">
               <p className="md:mb-5 w-64 md:text-center text-red-400 sm:text-green-400 md:text-white md:border-2 md:border-white rounded-md text-xl">Responsive Grommet-UI grids in React.</p>
               <p className=" text-xl md:text-white">An article that showcases how to create a responsive grid using Grommet UI in React.</p>
@@ -115,12 +138,12 @@ function Experience() {
                 <a href="https://medium.com/@stevemarvins.dev/responsive-grommet-ui-grids-in-react-31892103c207" target="_blank" rel="noopener noreferrer" className=" border-b-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white">Read more..</a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
         </div>
         <div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
