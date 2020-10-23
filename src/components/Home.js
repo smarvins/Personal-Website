@@ -27,6 +27,7 @@ class Home extends React.Component {
         <div className="flex h-screen">
           <div className="m-auto border-2 border-gray-400 p-8 rounded-md transform md:scale-125 lg:scale-150 xl:scale-100">
             <h1 className="w-10 text-5xl tracking-tighter text-gray-300 font-semibold">{hour < 12 ? `Good Morning!` : `Good Evening!`}</h1>
+            <p className="mb-3 text-lg">I'm Steve, a Full-Stack dev.</p>
             <p className="mb-3 text-lg">Let's begin shall we?</p>
             <Link to="/services">
               <span className="animate-ping absolute h-5 w-5 rounded-full bg-black  opacity-75"></span>
