@@ -2,7 +2,7 @@
 Hello! this is the current, updated portfolio to showcase my skills as a developer.
 
 
-### [Visit the site!](https://steve-marvins.netlify.app/)
+### [Visit the site!](https://steve-marvins.herokuapp.com/)
 ![Trailer pic](/screenshot.png)
 
 ### Served and deployed on...
