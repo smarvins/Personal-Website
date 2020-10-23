@@ -6,7 +6,7 @@ Hello! this is the current, updated portfolio to showcase my skills as a develop
 ![Trailer pic](/screenshot.png)
 
 ### Served and deployed on...
-Github | Amazon Web Services
+Github | Heroku
 
 ### Tech used on this site:
 * React
