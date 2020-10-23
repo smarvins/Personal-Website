@@ -5,6 +5,7 @@ import Navbar from './navbar';
 import { motion } from "framer-motion"
 
 function Skills() {
+  {/* Fade Animation */}
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -25,15 +26,15 @@ function Skills() {
       <div className="flex-initial">
         <Navbar/>
       </div>
-      <div className="flex-auto bg-white rounded-tl-3xl p-5 ml-2 overflow-hidden">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex-auto bg-white rounded-tl-3xl p-5 ml-2 overflow-hidden">
         <p className="text-3xl text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">SKILLS</p>
         <p className="text-xl">These are the <span className="text-red-400 sm:text-green-400 md:text-blue-400 lg:text-pink-400 xl:text-teal-400">skills</span> I learned over the past years as a developer.</p>
         {/* Card section */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="overflow-y-auto h-full mt-4 grid grid-cols-1 lg:grid-cols-3 gap-1">
+        <div className="overflow-y-auto h-full mt-4 grid grid-cols-1 lg:grid-cols-3 gap-1">
 
           {/* Web Frameworks card */}
           <motion.div variants={item} className="border-2 border-red-400 sm:border-green-400 md:border-white lg:border-white xl:border-white rounded-md">
@@ -105,10 +106,8 @@ function Skills() {
             </div>
           </motion.div>
 
-        </motion.div>
-        <div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
